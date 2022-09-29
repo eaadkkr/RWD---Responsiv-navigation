@@ -1,0 +1,98 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana;
+}
+
+.header {
+  background-color:#f1f1f1;
+  padding:15px;
+}
+
+.under-header {
+  overflow: auto;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  margin-top: 7px;
+  border: 1px solid #555;
+}
+
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  background-color: rgb(241, 202, 157);
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+.menuitem:last-child {
+    border-bottom: none;
+  }
+
+a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+a:hover {
+    background-color: rgb(196, 111, 14);
+    color: white;
+  }
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.right {
+  background-color: rgb(205, 241, 173);
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+.dag {
+  font-weight: bold;
+}
+
+.img {
+  width: 100%;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  margin-top: 7px;
+  font-size:12px;
+}
+
+@media only screen and (max-width:880px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:640px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
